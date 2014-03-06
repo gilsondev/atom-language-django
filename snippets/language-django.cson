@@ -86,3 +86,94 @@
   'send_mail':
     'prefix': 'sendmail'
     'body': 'mail.send_mail("${1:Subject}", "${2:Message}", "${3:from@example.com}", ${4:["to@example.com"]}${5:, fail_silently=True})\n'
+'.text.html.django':
+  'autoescape':
+    'prefix': 'autoescape'
+    'body': '{% autoescape ${1:off} %}\n\t$2\n{% endautoescape %}'
+  'block':
+    'prefix': 'block'
+    'body': '{% block $1 %}$2{% endblock $1 %}'
+  'blocktrans':
+    'prefix': 'blocktrans'
+    'body': '{% blocktrans ${1:with ${2:var1} as ${3:var2}} %}\n\t$4{{ $3 }}\n{% endblocktrans %}'
+  'comment':
+    'prefix': 'comment'
+    'body': '{% comment %}\n\t$1\n{% endcomment %}'
+  'cycle':
+    'prefix': 'cycle'
+    'body': '{% cycle $1 as $2 %}'
+  'debug':
+    'prefix': 'debug'
+    'body': '{% debug %}'
+  'else':
+    'prefix': 'else'
+    'body': '{% else %}'
+  'extends':
+    'prefix': 'extends'
+    'body': '{% extends "$1" %}'
+  'filter':
+    'prefix': 'filter'
+    'body': '{% filter $1 %}\n\t$2\n{% endfilter %}'
+  'firstof':
+    'prefix': 'firstof'
+    'body': '{% firstof $1 %}'
+  'for':
+    'prefix': 'for'
+    'body': '{% for $1 in $2 %}\n\t$3\n{% endfor %}'
+  'if':
+    'prefix': 'if'
+    'body': '{% if $1 %}$0{% endif %}'
+  'ifchanged':
+    'prefix': 'ifchanged'
+    'body': '{% ifchanged %}$0{% endifchanged %}'
+  'ifequal':
+    'prefix': 'ifequal'
+    'body': '{% ifequal $1 $2 %}$0{% endifequal %}'
+  'ifnotequal':
+    'prefix': 'ifnotequal'
+    'body': '{% ifnotequal $1 $2 %}$0{% endifnotequal %}'
+  'include':
+    'prefix': 'include'
+    'body': '{% include "$1" %}'
+  'load':
+    'prefix': 'load'
+    'body': '{% load $1 %}'
+  'now':
+    'prefix': 'now'
+    'body': '{% now "$1" %}'
+  'regroup':
+    'prefix': 'regroup'
+    'body': '{% regroup $1 by $2 as $3 %}'
+  'spaceless':
+    'prefix': 'spaceless'
+    'body': '{% spaceless %}$0{% endspaceless %}'
+  'ssi':
+    'prefix': 'ssi'
+    'body': '{% ssi $1 ${2:parsed} %}'
+  'super':
+    'prefix': 'super'
+    'body': '{{ block.super }}'
+  'templatetag: closeblock':
+    'prefix': '%}'
+    'body': '{% templatetag closeblock %}'
+  'templatetag: closevariable':
+    'prefix': '}}'
+    'body': '{% templatetag closevariable %}'
+  'templatetag: openblock':
+    'prefix': '{%'
+    'body': '{% templatetag openblock %}'
+  'templatetag: openvariable':
+    'prefix': '{{'
+    'body': '{% templatetag openvariable %}'
+  'trans':
+    'prefix': 'trans'
+    'body': '{% trans "${1:string to translate}" %}'
+  'url':
+    'prefix': 'url'
+    'body': '{% url ${1:package.module.view_fn} ${2:value1,kwarg=value2} %}'
+  'widthratio':
+    'prefix': 'widthratio'
+    'body': '{% widthratio ${1:this_value} ${2:max_value} ${3:100} %}'
+  'with':
+    'prefix': 'with'
+    'body': '{% with ${1:var} as ${2:name} %}{{ ${3:$2} }}{% endwith %}'
