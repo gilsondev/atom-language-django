@@ -1,0 +1,13 @@
+{
+  "name": "language-django",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Package converted of the python-django.tmbundle of Textmate, to improve django development",
+  "repository": "https://github.com/gilsondev/language-django",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+  }
+}
