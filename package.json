@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": false,
   "description": "Package converted of the python-django.tmbundle of Textmate, to improve django development",
-  "repository": "https://github.com/gilsondev/language-django",
+  "repository": "https://github.com/gilsondev/atom-language-django",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
