@@ -1,8 +1,8 @@
 {
   "name": "language-django",
-  "version": "1.0.0",
+  "version": "1.5.0",
   "private": false,
-  "description": "Package converted of the python-django.tmbundle of Textmate, to improve django development",
+  "description": "Package converted of the Django Bumble of Textmate, to improve django development",
   "repository": "https://github.com/gilsondev/atom-language-django",
   "license": "MIT",
   "engines": {
