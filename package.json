@@ -3,7 +3,7 @@
   "version": "1.5.0",
   "private": false,
   "description": "Package converted of the Django Bumble of Textmate, to improve django development",
-  "repository": "https://github.com/gilsondev/atom-language-django",
+  "repository": "https://github.com/gilsondev/atom-language-django.git",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
