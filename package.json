@@ -1,13 +1,17 @@
 {
   "name": "language-django",
-  "version": "1.5.0",
-  "private": false,
-  "description": "Package converted of the Django Bumble of Textmate, to improve django development",
-  "repository": "https://github.com/gilsondev/atom-language-django.git",
+  "version": "0.1.0",
+  "description": "Package to coding Django Projects with Atom.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gilsondev/atom-language-django.git"
+  },
   "license": "MIT",
   "engines": {
-    "atom": ">0.50.0"
+    "atom": "*",
+    "node": "*"
   },
-  "dependencies": {
+  "bugs": {
+    "url": "https://github.com/gilsondev/atom-language-django/issues"
   }
 }
